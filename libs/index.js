@@ -22,7 +22,7 @@ function CV(config, callback) {
 }
 
 CV.prototype.load_xlsx = function(input) {
-  return xlsx.readFile(input);
+  return xlsx.read(input);
 }
 
 CV.prototype.ws = function(config, wb) {
